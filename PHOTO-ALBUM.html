@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <style>
+                    
+                    .photo-frame{
+                              width: 300px;
+                    height: 200px;
+                    border:10px solid  coral;
+                    border-radius:20px;
+                    overflow: hidden;
+                    }
+                    .photo-frame .photo img{
+                             width:100%
+                             
+                    }
+                    .photo-frame .photo img:hover{
+                              transform: rotate(360deg);
+                              transition:transform 1s;
+                    }
+                    .photo-detail{
+                           position:   absolute;
+                           width: 310px;
+                    height: 200px;
+                    top:0;
+                    display: none;
+                    
+                    }
+                    .photo-frame:hover .photo-detail{
+                              display:block;
+                              background-color: rgb(169, 117, 99, 0.7);
+                             
+                    }
+                    
+                    
+          </style>
+</head>
+<body>
+          <h1>My photo book</h1>
+          <section class="photo-album">
+                    <div class="photo-frame">
+                              <div class="photo"><img src="photo/tiger.jpg" alt=""></div>
+                              
+                              <div class="photo-detail"><h3>Royal bengal Tiger</h3><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere esse repellat beatae? Voluptatibus, sunt tempora, temporibus nesciunt expedita numquam minus nam aut assumenda dolore tempore suscipit dolorem quos ad accusantium? Explicabo, dolorum incidunt sit cum molestiae, sequi minus quasi, in voluptatem cupiditate excepturi! Eos disofficiis.</p>
+                              </div>
+                              
+                    </div>
+                    
+          </section>
+</body>
+</html>
